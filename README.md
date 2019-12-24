@@ -6,5 +6,5 @@ Technologies used:
   - Node.js
   - Express
   - Boostrap
-  - Docker (in progress)
-  - GitHub Runner CI/CD (in progress)
+  - Docker (*in progress*)
+  - GitHub Runner CI/CD (*in progress*)
