@@ -7,7 +7,17 @@
 
 		<style type="text/css">
 			.custom-shadow {
-				box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.4);
+				box-shadow: 15px 15px 22px rgba(0, 0, 0, 0.4);
+			}
+
+			.carousel {
+				width: 55%;
+				height: 55%;
+			}
+
+			.carousel-inner img {
+				width: 100%;
+				height: 100%
 			}
 		</style>
 	</head>
@@ -46,17 +56,51 @@
 			</div>
 		</div>
 
-		<div class="container mt-5 pb-5 text-center">
-			<a href="https://photosbyharrison.com/post/176463860669" target="_blank">
-				<img class="img-fluid custom-shadow" src="https://66.media.tumblr.com/d2bf750ae527496ae388f0196fbd4826/tumblr_pcphzzvSQ01tfbnero1_1280.jpg" alt="College Dorm" width="90%" height="90%">
-			</a>
+		<div class="row mt-5 mr-0 justify-content-center">
+			<div id="gallery" class="carousel slide custom-shadow" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#gallery" data-slide-to="0" class="active"></li>
+					<li data-target="#gallery" data-slide-to="1"></li>
+					<li data-target="#gallery" data-slide-to="2"></li>
+					<li data-target="#gallery" data-slide-to="3"></li>
+				</ul>
+
+				<!-- Gallery Images -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="/dorm.jpg" alt="Dorm">
+					</div>
+					<div class="carousel-item">
+						<img src="/seaweed.jpg" alt="Seaweed">
+					</div>
+					<div class="carousel-item">
+						<img src="/kayak.jpg" alt="Kayak">
+					</div>
+					<div class="carousel-item">
+						<img src="/abandoned.jpg" alt="Abandoned">
+					</div>
+				</div>
+
+				<!-- Left/Right Arrows -->
+				<a class="carousel-control-prev" href="#gallery" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#gallery" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
 		</div>
 
-		<p class="mb-5 display-5 lead text-center">
+		<p class="mt-5 mb-5 display-5 lead text-center">
 			Programming, much like art, demands attention to detail.<br>
 			Whether you're nitpicking an element's padding or an image's tone curve, details matter.<br>
 			Quality work is demonstrated through the little things that often go unnoticed.
 		</h3>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	</body>
 
 </html>
